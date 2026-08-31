@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - zinchevm/argocd-project-app:latest@sha256:2e8966df0580051c6d4145976355f97d50360c6af1273e79c8f26303a7358c71
