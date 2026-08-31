@@ -2,6 +2,9 @@ variable "name" {
 }
 variable "tags" {
 }
+variable "github_pat" {
+  sensitive = true
+}
 variable "region" {
   description = "aws region"
   default     = "eu-central-1"
