@@ -6,7 +6,7 @@ resource "kubectl_manifest" "argocd_app" {
       name: argocd-project-app
       namespace: argocd
       annotations:
-        argocd-image-updater.argoproj.io/image-list: "app=zinchevm/argocd-project-app"
+        argocd-image-updater.argoproj.io/image-list: "app=zinchevm/argocd-project-app:latest"
         argocd-image-updater.argoproj.io/app.update-strategy: "digest"
         argocd-image-updater.argoproj.io/write-back-method: "git"
         argocd-image-updater.argoproj.io/git-branch: "main"
